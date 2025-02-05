@@ -7,7 +7,7 @@
             <router-link class="nav-link" to="/">Projektek Listája</router-link>
           </li>
           <li>
-            <router-link class="nav-link" to="/projectForm">Új Projekt Hozzáadása</router-link>
+            <router-link class="nav-link" to="/project-form">Új Projekt Hozzáadása</router-link>
           </li>
         </ul>
       </div>

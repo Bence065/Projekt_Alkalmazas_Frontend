@@ -1,0 +1,37 @@
+.bi{
+    border-radius: 100%;
+    font-size: large;
+}
+
+.delete{
+    color:red
+}
+
+.icons{
+    min-width:40px;
+    max-width:40px;
+}
+
+.description{
+    min-width: 300px;
+}
+
+.table{
+    max-width: 98%;
+}
+
+.projectName{
+    width:300px;
+}
+
+.budget{
+    width:300px;
+}
+
+.date{
+    max-width:100px;
+}
+
+textarea{
+    height:20px;
+}
