@@ -30,10 +30,6 @@ const deleteProject = (index) => {
   localStorage.setItem('projects', JSON.stringify(projects.value));
 };
 
-const formatCurrency = (value) => {
-  return new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF', maximumFractionDigits: 0}).format(value);
-};
-
 const filteredProjects = computed(() => {
   return projects.value.filter(project =>
     project.projectName.toLowerCase().includes(searchQuery.value.toLowerCase())
@@ -55,7 +51,6 @@ watch(projects, (newProjects) => {
     <input v-model="searchQuery" placeholder="Keresés" class="form-control m-3 w-25" />
     <ProjectTable 
       :projects="filteredProjects" 
-      :formatCurrency="formatCurrency"
       @edit="editProject" 
       @save="saveProject" 
       @delete="deleteProject"

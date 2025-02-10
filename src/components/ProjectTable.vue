@@ -1,9 +1,9 @@
 <script setup>
 import { defineProps } from 'vue';
+import { formatCurrency } from '@/utils/helpers'
 
 defineProps({
   projects: Array,
-  formatCurrency: Function
 });
 </script>
 
